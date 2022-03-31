@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 //Variable Declarations
-int a, b, c;
+extern int a, b, c;
 
 float f, g, h;
 
@@ -9,11 +9,14 @@ float f, g, h;
 
 int main()
 {
-	//Variable Initialization
-	a = 10;
-	b = 2147483647;
+	//Variabke Definition
+	int a, b, c;
 
-	c = a + b;
-	printf("Value  of sum is: %d", c);
+	//Variable Initialization
+	g = -1000.9999;
+	f = -1.1111;
+
+	h = g + f;
+	printf("Value  of sum is: %f", h);
 	return 0;
 }
